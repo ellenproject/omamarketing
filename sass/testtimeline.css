@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body #conference-timeline {
+  display: block;
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body #conference-timeline .timeline-start {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #00b0bd;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .timeline-start {
+    margin: 0;
+  }
+}
+
+body #conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #00b0bd;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container {
+  float: left;
+  max-width: 44%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-left-container {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: auto;
+    float: nonoe;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 27px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left::before {
+  content: "\f0da";
+  right: -8px;
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left::before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left p {
+    margin: 0;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left p .article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #00b0bd;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .content-left p .article-number {
+    display: none;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-left-container .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container {
+  float: right;
+  max-width: 44%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 27px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right::before {
+  content: "\f0d9";
+  left: -8px;
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right p {
+    margin: 0;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right p .article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #00b0bd;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .content-right p .article-number {
+    display: none;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .content-right-container .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #00b0bd;
+}
+
+@media only screen and (max-width: 768px) {
+  body #conference-timeline .conference-timeline-content .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .meta-date .date {
+  font-size: 18px;
+  line-height: 36px;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+
+body #conference-timeline .conference-timeline-content .timeline-article .meta-date .month {
+  font-size: 16px;
+  line-height: 10px;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+body #conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #00b0bd;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=testtimeline.css.map */

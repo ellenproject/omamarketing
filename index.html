@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="網路行銷公司 - 歐鎷資訊提供網站設計及架設、企業B2B整合行銷、程式設計、SEO搜尋引擎行銷、SEM網路整合行銷..等服務，為您的網站增進流量，快速磋合買賣效益。">
+    <title>奧瑪整合行銷 | 網路行銷、網站設計、B2B行銷 | SEM搜尋引擎整合行銷</title>
+    <link rel="stylesheet" href="./sass/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/66ca577ef5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/swiper-bundle.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <div class="header transparent">
+        <div class="header-top d-md-flex">
+            <a href="#" class="header-top-a"><span data-lang="about_01">關於我們</span></a>
+            <a href="#" target="_blank" class="header-top-a"><span data-lang="facebook"><i class="fab fa-facebook-square"></i></span></a>
+        </div>
+        <div class="header-content">
+            <div class="header-logo forIndex-2">
+                <a href="./index.html"><img src="./img/logo-digital-marketing-institute.svg" alt=""></a>
+            </div>
+            <ul class="header-link d-md-flex flex-1">
+                <li class="header-link-item header-link-item-1">
+                    <a href="./marketing.html"><span data-lang="webmarketing_01">網路行銷</span></a>
+                </li>
+                <li class="header-link-item header-link-item-2">
+                    <a href="#" class="header-collapsed header-pricing">
+                        <a href="./services.html"><span data-lang="index_item_002">服務項目</span></a>
+                    </a>
+                </li>
+                <li class="header-link-item header-link-item-3">
+                    <a href="./cases.html"><span data-lang="cases_01">成果案例</span></a>
+                </li>
+            </ul>
+            <!-- 漢堡選單 -->
+            <a href="#" class="showmenu">
+                <i class="fas fa-bars"></i>
+            </a>
+            <div class="header-right d-md-flex">
+                <div class="header-link-item">
+                    <a href="./contact.html"><span data-lang="contact_01">洽詢</span></a>
+                </div>
+                <div class="header-lang">
+                    <i class="fas fa-globe" style="color: #FFF"></i>
+                    <select name tabindex="-98" id="languageType" class="selectpicker">
+                        <option value="" lang="en">English</option>
+                        <option value="" lang="cn">Japanese</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <!-- 首圖banner -->
+        <div class="landing_banner">
+            <div class="banner_box aos-init aos-animate">
+                <div class="banner_container container">
+                    <h1 class="banner_title d-md-block" data-lang="index_01" data-aos="fade-up">各大工業推薦<br>網路行銷的首選</h1>
+                    <p class="banner_text" data-lang="index_02">網站做好，營運才開始</p>
+                    <div class="banner_btn">
+                        <a href="./contact.html" class="btn btn-primary contact-btn"><span style="color: #FFF">專人洽詢</span></a>
+                        <a href="./services.html" class="btn btn-outline-light"><span style="color: #FFF">立即查看服務項目</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 選擇服務 -->
+        <div class="container aos-init aos-animate container-servicebox" data-aos="fade-up" id="chooseMode">
+            <div class="main_title text_center d-md-block">選擇你需要的服務內容</div>
+            <div class="row">
+                <div class="col-lg-6 col-6 item">
+                    <div class="mode">
+                        <div><img src="./img/index_01-idea.svg" alt=""></div>
+                        <div>
+                            <a href="#" class="mode_title btn-arrow-circle">
+                                <span>網路行銷</span>
+                                <i class="far fa-arrow-alt-circle-right icon-font"></i>
+                            </a>
+                            <p class="mode_text">發揮最大行銷效益，效果快又好，快來預約你的網路行銷專家吧！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6 item">
+                    <div class="mode position-relative">
+                        <div><img src="./img/index_01-selection.svg" alt=""></div>
+                        <div>
+                            <a href="#" class="mode_title btn-arow-circle">
+                                <span>包套方案</span>
+                                <i class="far fa-arrow-alt-circle-right icon-font"></i>
+                            </a>
+                            <p class="mode-text">專業套裝服務，優異的專案控管及專屬行銷策略。與你共同打造雙贏局勢！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6 item">
+                    <div class="mode">
+                        <div><img src="./img/index_01-settings.svg" alt=""></div>
+                        <div>
+                            <a href="#" class="mode_title btn-arrow-circle">
+                                <span>客製策略</span>
+                                <i class="far fa-arrow-alt-circle-right icon-font"></i>
+                            </a>
+                            <p class="mode_text">豐富的客製行銷經驗，數位化管理平台，讓你的行銷策略充滿競爭力！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6 item">
+                    <div class="mode position-relative">
+                        <div><img src="./img/index_01-shutter.svg" alt=""></div>
+                        <div>
+                            <a href="#" class="mode_title btn-arow-circle">
+                                <span>社群優化</span>
+                                <i class="far fa-arrow-alt-circle-right icon-font"></i>
+                            </a>
+                            <p class="mode-text">準確命中客群喜好，在內容行銷上提供更優質的解決方案，做你的社群好夥伴！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 最新案例 -->
+        <div class="container container-casesbox">
+            <div class="position-relative aos-init aos-animate" id="cases_swiper" data-aos="fade-up">
+                <div class="case-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper position-relative">
+                        <div class="swiper-slide swiper-slide-active">
+                            <div class="cases_box">
+                                <a href="#" class="cases_img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt=""></a>
+                                <div class="cases_label">合作夥伴獨享</div>
+                                <a href="#" class="cases_title">9/30前洽詢行銷助手，立即取得客製建議書</a>
+                                <p class="cases_text">期間限定優惠</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next">
+                            <div class="cases_box">
+                                <a href="#" class="cases_img"><img src="https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80" alt=""></a>
+                                <div class="cases_label">經濟包套方案</div>
+                                <a href="#" class="cases_title">《整合服務一條龍》好評延長到2021年9月30日</a>
+                                <p class="cases_text">你想要的服務應有盡有</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cases_box">
+                                <a href="#" class="cases_img"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt=""></a>
+                                <div class="cases_label">客製專屬策略</div>
+                                <a href="#" class="cases_title">針對品牌，分析數據，幫助客戶更貼近目標市場</a>
+                                <p class="cases_text">專屬客戶的集客行銷方案</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 選擇理由 -->
+        <div class="reason chooseReason">
+            <div class="container container-reasonbox">
+                <div class="main_title text_center mb-3">數位行銷的新時代</div>
+                <div class="main_title text_center">你一定要選擇奧瑪的五大理由</div>
+            </div>
+            <div class="reason reason_1 reasonbox1">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-6 col-12 reason_left-title">
+                            <div class="number_title mb-2">01</div>
+                            <div class="article_title mb-3">線上<span style="color: #12aaeb">專案管理</span>系統</div>
+                            <div class="reason_title mb-3">讓各部門專案串接工作藉由數位化管控更有效率，除此還能減少紙上作業文件更環保，所以一家專業的網站製作公司內部是否有專人或系統來統籌專案至關重要。</div>
+                        </div>
+                        <div class="col-md-6 col-12 reason_right-img">
+                            <picture><img src="./img/reason_img-1.jpeg" alt="" class="reason_img"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reason reason_2 reasonbox2">
+                <div class="container aos-init aos-animate" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-6 col-12 reason_left-img">
+                            <picture><img src="./img/reason_img-2.jpeg" alt="" class="reason_img"></picture>
+                        </div>
+                        <div class="col-md-6 col-12 reason_right-title">
+                            <div class="number_title mb-2">02</div>
+                            <div class="article_title mb-3">網站<span style="color: #12aaeb">80%</span>自製率</div>
+                            <div class="reason_text">許多網站製作公司除了業務及少數行政人員是自家員工，大部份的程式及設計師都是跟其他外包公司合作，最終您的網站就會變成所謂的「網站孤兒」。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reason reason_3 reasonbox3">
+                <div class="container aos-init aos-animated" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-6 col-12 reason_left-title">
+                            <div class="number_title mb-2">03</div>
+                            <div class="article_title mb-3">研發<span style="color: #12aaeb">客製售後</span>服務</div>
+                            <div class="reason_text">透過網站就可以直接做線上預約，除了可減少人力溝通的成本，也能避免人為疏失所導致的失單，更能有效管理預約客戶進而減少客戶棄單。</div>
+                            <div class="clientbox">
+                                <div class="clientbox-box">
+                                    <p>60<span style="font-size: 28px; margin-left: 4px;">yr+</span></p>
+                                    <span>經驗累積</span>
+                                </div>
+                                <div class="clientbox-box">
+                                    <p>1,000<span style="font-size: 28px; margin-left: 4px;">+</span></p>
+                                    <span>成功案例</span>
+                                </div>
+                                <div class="clientbox-box">
+                                    <p>600<span style="font-size: 28px; margin-left: 4px;">hr</span></p>
+                                    <span>平均研發經驗</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 reason_right-img">
+                            <picture><img src="./img/reason_img-3.jpeg" alt="" class="reason_img"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reason reason_4 reasonbox4">
+                <div class="container aos-init aos-animated" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-6 col-12 reason_left-img">
+                            <picture><img src="./img/reason_img-4.jpeg" alt="" class="reason_img"></picture>
+                        </div>
+                        <div class="col-md-6 col-12 reason_right-title">
+                            <div class="number_title mb-2">04</div>
+                            <div class="article_title mb-3"><span style="color: #12aaeb">異業結合</span>整合行銷</div>
+                            <div class="reason_text">不同的產業有各自的網路行銷需求，為了滿足客戶我們整合各種資源，提供各式行銷的加值服務，如：影片拍攝、平面設計、廣告採買、社群行銷、海外平台…等。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reason reason_5 reasonbox5">
+                <div class="container aos-init aos-animated" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 reason_center-title">
+                            <div class="number_title mb-2">05</div>
+                            <div class="article_title mb-3">網路行銷<span style="color: #12aaeb">諮詢服務</span></div>
+                            <div class="reason_text">團隊中專業的網站行銷經理，除了網站規劃製作的基本功外，多年來累積的眾多的客戶經歷對於商業經營的敏銳度，更能協助您做好後續網路行銷的規劃找出商機。</div>
+                            <a href="#" class="btn-arrow-circle casesView" data-target="#popup-image-gallery" data-toggle="modal">
+                                <span style="margin-right: 12px;">瀏覽成果</span>
+                                <i class="far fa-arrow-alt-circle-right caseViewBtn"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="material_swiper_box aos-init aos-animate moreApplication" data-aos="fade-left">
+                    <div class="font-size-18">除了協助客戶提昇產業競爭力，我們還整合更多元的應用！</div>
+                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal moreApplication-box" id="jaterial_swiper">
+                        <div class="swiper-wrapper moreApplication-box-wrap">
+                            <div class="swiper-slide swiper-slide-active moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-1.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">工業</span>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-2.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">金融</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-3.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">觀光</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-4.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">食品</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-5.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">美容</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-6.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">電子</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-7.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">玩具</span>
+                            </div>
+                            <div class="swiper-slide moreApplication-box-choose">
+                                <picture><img src="./img/reason5_img-8.jpeg" alt="" class="comment_img"></picture>
+                                <span class="comment_span">時尚</span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination d-block d-md-none swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-prev swiper-btn d-none d-md-block swiper-button-disabled" tabindex="0" role="button" aria-lebal="Previous slide" aria-disabled="true"><i class="fas fa-arrow-left"></i></div>
+                        <div class="swiper-next swiper-btn d-none d-md-block" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><i class="fas fa-arrow-right"></i></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resources">
+            <div class="container aos-init aos-animate" id="marketing_resources" data-aos="fade-up">
+                <div class="main_title text-center">我們擁有更多行銷資源供你探索！</div>
+                <div class="row">
+                    <div class="col-md-6 col-12 item">
+                        <div class="marketing_box">
+                            <div class="box-icon"><img src="./img/index_01-image.svg" alt=""></div>
+                            <div class="flex-1">
+                                <div class="resources_title"><span class="mr-3">行銷人</span></div>
+                                <p>各類型行銷文章，無論知識、新聞、或是最新行銷工具都可在這找到！</p>
+                                <a href="#" class="btn-arrow-circle">
+                                    <span>立刻觀看新知</span>
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 item">
+                        <div class="marketing_box">
+                            <div class="box-icon"><img src="./img/index_01-search.svg" alt=""></div>
+                            <div class="flex-1">
+                                <div class="resources_title"><span class="mr-3">行銷看板</span></div>
+                                <p>提供廠商刊登服務的空間，和客戶一起打造行銷共享平台！</p>
+                                <a href="#" class="btn-arrow-circle">
+                                    <span>最新媒合需求</span>
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container period">
+            <div class="row">
+                <div class="col-md-6 col-12 period-left">
+                    <div class="main_title">執行期間，我們提供…</div>
+                    <div class="period-list">
+                        <div class="period-list-item"><span class="period-list-num">1.</span>線上專案管理系統</div>
+                        <div class="period-list-item"><span class="period-list-num">2.</span>網站80%自製率</div>
+                        <div class="period-list-item"><span class="period-list-num">3.</span>客製售服系統</div>
+                        <div class="period-list-item"><span class="period-list-num">4.</span>異業結盟整合行銷</div>
+                        <div class="period-list-item"><span class="period-list-num">5.</span>網路行銷諮詢服務</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 period-right">
+                    <picture>
+                        <img src="./img/period.jpeg" alt="" class="period-img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="container aos-init aos-animate cooperation" data-aos="fade-up">
+            <div class="enterprise">
+                <div class="main_title text_center mb-3">超過1000家知名企業的共同選擇</div>
+                <div class="enterprise_box d-none d-md-block">
+                    <div class="enterprise_list" data-img="1,5">
+                        <img src="./img/cooperation-1.png" alt="">
+                        <img src="./img/cooperation-2.png" alt="">
+                        <img src="./img/cooperation-3.png" alt="">
+                        <img src="./img/cooperation-4.png" alt="">
+                        <img src="./img/cooperation-5.png" alt="">
+                    </div>
+                    <div class="enterprise_list" data-img="6,10">
+                        <img src="./img/cooperation-6.png" alt="">
+                        <img src="./img/cooperation-7.png" alt="">
+                        <img src="./img/cooperation-8.png" alt="">
+                        <img src="./img/cooperation-9.png" alt="">
+                        <img src="./img/cooperation-10.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-container d-md-none swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1">
+                            <div class="enterprise_list" data-img="6,10">
+                                <img src="./img/cooperation-6.png" alt="">
+                                <img src="./img/cooperation-7.png" alt="">
+                                <img src="./img/cooperation-8.png" alt="">
+                                <img src="./img/cooperation-9.png" alt="">
+                                <img src="./img/cooperation-10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-slide-index="0">
+                            <div class="enterprise_list" data-img="1,5">
+                                <img src="./img/cooperation-1.png" alt="">
+                                <img src="./img/cooperation-2.png" alt="">
+                                <img src="./img/cooperation-3.png" alt="">
+                                <img src="./img/cooperation-4.png" alt="">
+                                <img src="./img/cooperation-5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-slide-index="1">
+                            <div class="enterprise_list" data-img="6,10">
+                                <img src="./img/cooperation-6.png" alt="">
+                                <img src="./img/cooperation-7.png" alt="">
+                                <img src="./img/cooperation-8.png" alt="">
+                                <img src="./img/cooperation-9.png" alt="">
+                                <img src="./img/cooperation-10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                            <div class="enterprise_list" data-img="1,5">
+                                <img src="./img/cooperation-1.png" alt="">
+                                <img src="./img/cooperation-2.png" alt="">
+                                <img src="./img/cooperation-3.png" alt="">
+                                <img src="./img/cooperation-4.png" alt="">
+                                <img src="./img/cooperation-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                    <span class="swiper-notification" aria-live="assertie" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="readyPlan">
+            <div class="plan_title">準備開始你的行銷計畫嗎？Let's Do It!</div>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <a href="#" class="btn btn-light contact-btn">立即洽詢</a>
+                <a href="#" class="btn btn-outline-light program-btn"><span style="color: #FFF">推薦服務</span></a>
+            </div>
+        </div>
+        <div class="footer_full footer-flex">
+            <div class="footer_box">
+                <div class="flex-wrap itembox">
+                    <ul class="footer_link-left">
+                        <li class="title">奧瑪數位行銷</li>
+                        <li><a href="#" target="_blank">行銷人</a></li>
+                        <li><a href="#" target="_blank">行銷看板</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                    <ul class="footer_link-center">
+                        <li class="title">CONTACT聯絡我們</li>
+                        <div class="d-flex">
+                            <li class="footer_link-center-icon">
+                                <span><i class="fas fa-envelope"></i></span><br>
+                                <span><i class="fas fa-phone"></i></span><br>
+                                <span><i class="fas fa-fax"></i></span><br>
+                                <span><i class="fas fa-map-marked-alt"></i></span><br>
+                            </li>
+                            <li class="footer_link-center-contact">
+                                <a href="#" target="_blank">service@OMAfirst.com.tw</a><br>
+                                <a href="#" target="_blank">02-2243-9960</a><br>
+                                <a href="#" target="_blank">02-2243-5922</a><br>
+                                <a href="#" target="_blank">802 高雄市 苓雅區 中正一路306號6F-3</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="footer_link-right">
+                        <li class="title">HELP幫助</li>
+                        <li><a href="#">企業協作方案</a></li>
+                        <li><a href="#">異業合作洽談</a></li>
+                        <li><a href="#">線上行銷平台</a></li>
+                    </ul>
+                </div>
+                <div class="Copyright">
+                    <p class="Copyright-right">Copyright©2021 奧鎷數位科技股份有限公司. All Rights Reserved.</p>
+                    <a href="#" target="_blank" class="Copyright-center">使用條款</a>
+                    <a href="#" target="_blank" class="Copyright-left">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal popup-image-gallery" id="popup-image-gallery" role="dialog" tabindex="-1"></div>
+        <div class="modal bs4_modal mobile_notice fade" id="mobile_notice" role="dialog" tabindex="-1"></div>
+    </div>
+    
+    
+
+
+    <!-- swiper -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <!-- <script>
+        AOS.init();
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+body
+    margin: 0
+    font-size: 1rem
+    font-weight: 400
+    line-height: 1.5
+    text-align: left
+    .TC
+        font-family: "Noto Sans TC","Noto Sans SC", "Noto Sans", "Source Sans Pro", "PingFang TC", "Microsoft YaHei"
+    .btn-primary
+        color: #fff
+        background-color: #12aaeb
+        border-color: #12aaeb
+        &:hover, &:focus, &:active:hover
+            color: #fff
+            background-color: #0e80b0
+            border-color: #0e80b0
+    a:link
+        color: #12aaeb
+    a:visited
+        color: #12aaeb
+    a:hover
+        color: #0e80b0
+    a:active
+        color: #0e80b0
+
+    .header
+        position: fixed
+        width: 100%
+        z-index: 100
+        top: 0
+        background-color: transparent
+        @media screen and ( max-width: 767px )
+            background: #fff
+            .header-content
+                .header-link-item
+                    color: #212529
+        .header-top
+            padding: 0 30px
+            height: 40px
+            background-color: #ecf8fd
+            align-items: center
+            justify-content: flex-end
+            &-a
+                text-decoration: none
+                margin-right: 30px
+        .header-content
+            padding: 0 30px
+            display: flex
+            height: 80px
+            justify-content: space-between
+            align-items: center
+            .scrolled
+                background-color: lightblue
+            .header-logo
+                width: 150px
+                background: 100%
+                cursor: pointer
+                height: 76px
+                margin-right: 10px
+            .header-link
+                flex: 1
+                justify-content: flex-start
+                align-items: center
+                &-item
+                    cursor: pointer
+                    font-size: 18px
+                    margin-left: 40px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    color: #FFF
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+                .header-collapsed
+                    .icon-arrow-down-filled
+                        font-size: 16px
+                        margin-left: 4px
+                        margin-top: 2px
+                        &::before
+                            content: "\e626"
+                .header-dropdown
+                    border: solid 1px #dcdcdc
+                    width: 200px
+                    background-color: #fff
+                    padding: 13px 0
+                    position: absolute
+                    top: 43px
+            .header-right
+                align-items: center
+                padding-left: 20px
+                .header-link-item
+                    cursor: pointer
+                    font-size: 18px
+                    margin-right: 15px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    padding: 0 15px
+                    min-width: 89px
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+    .bg-white
+        // width: 100%
+        // height: 364px
+        background-color: #555555

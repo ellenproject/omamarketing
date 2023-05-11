@@ -1,0 +1,491 @@
+body
+    margin: 0
+    font-size: 1rem
+    font-weight: 400
+    line-height: 1.5
+    text-align: left
+    .TC
+        font-family: "Noto Sans TC","Noto Sans SC", "Noto Sans", "Source Sans Pro", "PingFang TC", "Microsoft YaHei"
+    .btn-primary
+        color: #fff
+        background-color: #12aaeb
+        border-color: #12aaeb
+        &:hover, &:focus, &:active:hover
+            color: #fff
+            background-color: #0e80b0
+            border-color: #0e80b0
+    a:link
+        color: #12aaeb
+    a:visited
+        color: #12aaeb
+    a:hover
+        color: #0e80b0
+    a:active
+        color: #0e80b0
+
+    .header
+        position: fixed
+        width: 100%
+        z-index: 100
+        top: 0
+        background-color: transparent
+        @media screen and ( max-width: 767px )
+            background: #fff
+            .header-content
+                .header-link-item
+                    color: #212529
+        .header-top
+            padding: 0 30px
+            height: 40px
+            background-color: #ecf8fd
+            align-items: center
+            justify-content: flex-end
+            @media screen and ( max-width: 767px )
+                display: none
+            &-a
+                text-decoration: none
+                margin-right: 30px
+                pointer-events: none
+        .header-content
+            padding: 0 30px
+            display: flex
+            height: 80px
+            justify-content: space-between
+            align-items: center
+            .scrolled
+                background-color: lightblue
+            .header-logo
+                width: 150px
+                background: 100%
+                cursor: pointer
+                height: 76px
+                margin-right: 10px
+            .header-link
+                flex: 1
+                justify-content: flex-start
+                align-items: center
+                @media screen and ( max-width: 767px )
+                    /*隱藏選單開始*/
+                    max-height: 0px
+                    overflow: hidden
+                    /*隱藏選單結束*/
+                    transition: max-height 1.5s
+                    margin-top: 1px
+                    padding-left: 0
+                    /*絕對定位疊在網頁上*/
+                    position: absolute
+                    z-index: 100
+                    /*header 80px+1px boder 線條*/
+                    top: 81px
+                    left: 0
+                    right: 0
+                    /*left跟right寫0，呈現滿版*/
+                    background: #0F222B
+                &-item
+                    list-style: none
+                    cursor: pointer
+                    font-size: 18px
+                    margin-left: 40px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    color: #212529
+                    @media screen and ( max-width: 767px )
+                        float: none
+                        border-bottom: 1px dashed #212529
+                        margin-left: 0
+                        color: #FFF
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+                        @media screen and ( max-width: 767px )
+                            transition: all .5s
+            .showmenu
+                display: none
+                @media screen and ( max-width: 767px )
+                    display: block
+                    float: right
+                    margin: 1em
+            .header-right
+                align-items: center
+                padding-left: 20px
+                @media screen and ( max-width: 767px )
+                    display: none
+                .header-link-item
+                    cursor: pointer
+                    font-size: 18px
+                    margin-right: 15px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    padding: 0 15px
+                    min-width: 89px
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+            .menu-show
+                @media screen and ( max-width: 767px )
+                    max-height: 500px
+    .topBanner
+        padding-top: 120px
+        .page-banner
+            position: relative
+            &::before
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(18, 170, 235, 0.7))
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: 1
+        .page-banner
+            .page-banner-content
+                align-items: flex-end
+                color: #FFFFFF
+                position: absolute
+                z-index: 2
+                top: 0
+                left: 50%
+                width: 100%
+                height: 100%
+                transform: translateX(-50%)
+                display: flex
+                padding-top: 50px
+                padding-bottom: 50px
+                .topBanner-topTitle
+                    font-size: 40px
+                    font-weight: bold
+                    letter-spacing: 1px
+                    max-width: 800px
+            .topBanner-img
+                height: 318px
+                overflow: hidden
+                @media screen and ( max-width: 767px )
+                    height: 100%
+                    width: 100%
+                img
+                    width: 100%
+                    vertical-align: middle
+                    border-style: none
+    .marketPlan
+        margin: 60px auto
+        display: flex
+        .row
+            display: flex
+            flex-wrap: wrap
+            margin: 0px -15px
+            display: flex
+            .plan-left
+                min-width: 670px
+                @media screen and ( max-width: 767px )
+                    min-width: 100%
+                .plan-belif
+                    font-size: 40px
+                    font-weight: bold
+                    letter-spacing: 1px
+                    color: #333333
+                    margin-bottom: 20px
+                    line-height: normal
+                .plan-p
+                    font-size: 18px
+                    font-weight: normal
+            .plan-right
+                width: 445px
+                height: 235px
+                overflow: hidden
+                @media screen and ( max-width: 767px )
+                    width: 100%
+                .imgWrap
+                    img
+                        width: 100%
+    .content
+        padding: 95px 0 0 0
+        position: relative
+        transition: all 0.5s ease 0
+        .formular
+            .contact
+                position: relative
+                z-index: 10
+                &::before
+                    content: ""
+                    width: 50%
+                    height: 100%
+                    background: linear-gradient(54deg, #12aaeb 0%, #0e80b0 100%)
+                    position: absolute
+                    top: 0
+                    left: 0
+                    z-index: -1
+                    @media screen and ( max-width: 767px )
+                        width: 100%
+                .info
+                    display: flex
+                    flex-wrap: wrap
+                    padding: 130px 100px 125px 100px
+                    max-width: 1610px
+                    margin: auto
+                    height: 100%
+                    @media screen and ( max-width: 767px )
+                        display: block
+                        padding: 0
+                    &::after
+                        content: ""
+                        width: 50%
+                        height: 100%
+                        background: url(../img/index_02_introBanner.jpeg) no-repeat bottom center
+                        background-size: cover
+                        position: absolute
+                        top: 0
+                        right: 0
+                        z-index: -1
+                    .info_left
+                        width: 30%
+                        color: #fff
+                        padding: 0 30px 0 0
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                            padding: 10px
+                        .welcomeContact
+                            margin-bottom: 20px
+                        .contactP
+                            line-height: 1.5
+                            padding-bottom: 40px
+                            max-width: 401px
+                            border-bottom: 1px solid rgba(225, 225, 225, 0.3)
+                        .infoOMA
+                            line-height: 2
+                            padding: 35px 0 35px 23px
+                            .OMAdetail
+                                .subtitle
+                                    position: relative
+                                    padding-bottom: 3px
+                                .detail
+                                    text-decoration: none
+                                    color: #fff
+                                    position: relative
+                                    transition: all 0.5s ease 0s
+
+                    .info_right
+                        width: 70%
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                        .right-form
+                            padding: 35px 40px 35px 58px
+                            background-color: rgba(255, 255, 255, 0.95)
+                            @media screen and ( max-width: 767px )
+                                padding: 0
+                            .required
+                                height: 35px
+                                padding-right: 35px
+                                color: #12aaeb
+                                position: relative
+                                text-align: right
+                                display: flex
+                                flex-wrap: wrap
+                                align-items: center
+                                justify-content: flex-end
+                                z-index: 10
+                                margin-bottom: 20px
+                                &::before
+                                    content: ""
+                                    width: 155px
+                                    height: 35px
+                                    background-color: rgba(226, 226, 266, 0.75)
+                                    border-radius: 35px
+                                    position: absolute
+                                    right: 0px
+                                    top: 0px
+                                    z-index: -1
+                            .formWrap
+                                .name
+                                    display: flex
+                                    flex-wrap: wrap
+                                    @media screen and ( max-width: 767px )
+                                        display: block
+                                    .person,.company
+                                        width: calc( 50% - 16px )
+                                        margin-right: 16px
+                                        border-bottom: 1px solid rgba(152, 152, 152, 0.35)
+                                        display: flex
+                                        flex-wrap: wrap
+                                        align-items: center
+                                        padding-bottom: 15px
+                                        margin-bottom: 30px
+                                        @media screen and ( max-width: 767px )
+                                            width: 100%
+                                        .title
+                                            fas
+                                                margin-right: 5px
+                                        .text
+                                            width: calc( 100% - 120px )
+                                            word-wrap: break-word
+                                            input
+                                                margin-left: 20px
+                                                width: 100%
+                                                height: 100%
+                                                font-size: 16px
+                                                color: #12aaeb
+                                                border: 0
+                                                background-color: transparent
+                                                outline: none
+                                .tel
+                                    display: flex
+                                    flex-wrap: wrap
+                                    @media screen and ( max-width: 767px )
+                                        display: block
+                                    .phone,.email
+                                        width: calc( 50% - 16px )
+                                        margin-right: 16px
+                                        border-bottom: 1px solid rgba(152, 152, 152, 0.35)
+                                        display: flex
+                                        flex-wrap: wrap
+                                        align-items: center
+                                        padding-bottom: 15px
+                                        margin-bottom: 30px
+                                        @media screen and ( max-width: 767px )
+                                            width: 100%
+                                        .title
+                                            fas
+                                                margin-right: 5px
+                                        .text
+                                            width: calc( 100% - 120px )
+                                            word-wrap: break-word
+                                            input
+                                                margin-left: 20px
+                                                width: 100%
+                                                height: 100%
+                                                font-size: 16px
+                                                color: #12aaeb
+                                                border: 0
+                                                background-color: transparent
+                                                outline: none
+                                .message
+                                    flex-wrap: wrap
+                                    border-bottom: 0
+                                    display: flex
+                                    flex-wrap: wrap
+                                    align-items: center
+                                    padding-bottom: 0
+                                    margin-bottom: 0
+                                    margin-right: 16px
+                                    .messageTitle
+                                        fas
+                                            margin-right: 5px
+                                    .text
+                                        width: 100%
+                                        textarea
+                                            margin: 0px 5px 0px 0px
+                                            height: 210px
+                                            // width: calc( 50% - 16px )
+                                            font-size: 16px
+                                            color: #12aaeb
+                                            background-color: transparent
+                                            display: flex
+                                            padding: 10px
+                                            border: 1px solid #d7dbd8
+                                            outline: none
+                                            width: 100%
+                                .send
+                                    margin: 0 auto
+                                    margin-top: 20px
+                                    text-decoration: none
+                                    color: #fff
+                                    background-color: #12aaeb
+                                    width: 160px
+                                    height: 50px
+                                    border-radius: 50px
+                                    position: relative
+                                    display: flex
+                                    flex-wrap: wrap
+                                    justify-content: center
+                                    align-items: center
+                                    transition: all 0.3s ease 0s
+    .footer_full
+            border-top: solid 1px #dddddd
+            background-color: #fff
+            padding-left: 20px
+            padding-right: 20px
+            .footer_box
+                max-width: 1110px
+                margin: 0 auto
+                padding: 40px 0 48px
+                .itembox
+                    width: 100%
+                    display: flex
+                    .footer_link-left
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                    .footer_link-center
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                        .d-flex
+                            .footer_link-center-icon
+                                margin-right: 20px
+                                color: #12aaeb
+                    .footer_link-right
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            display: none
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                .Copyright
+                    padding-top: 55px
+                    width: 100%
+                    justify-content: center
+                    display: flex
+                    @media screen and ( max-width: 767px )
+                        display: block
+                    p, ul, li, ol, a
+                        list-style: none
+                        text-decoration: none
+                    &-right, &-center, &-left
+                        margin-right: 20px
+                        margin-bottom: 0px
+                        padding-bottom: 0px
+                        color: #333333
+                        @media screen and ( max-width: 767px )
+                            font-size: 12px
+                            margin: 0 auto

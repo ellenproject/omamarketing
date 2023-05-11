@@ -1,0 +1,813 @@
+body
+    margin: 0
+    font-size: 1rem
+    font-weight: 400
+    line-height: 1.5
+    text-align: left
+    .TC
+        font-family: "Noto Sans TC","Noto Sans SC", "Noto Sans", "Source Sans Pro", "PingFang TC", "Microsoft YaHei"
+    .btn-primary
+        color: #fff
+        background-color: #12aaeb
+        border-color: #12aaeb
+        &:hover, &:focus, &:active:hover
+            color: #fff
+            background-color: #0e80b0
+            border-color: #0e80b0
+    a:link
+        color: #12aaeb
+    a:visited
+        color: #12aaeb
+    a:hover
+        color: #0e80b0
+    a:active
+        color: #0e80b0
+
+    .header
+        position: fixed
+        width: 100%
+        z-index: 100
+        top: 0
+        background-color: transparent
+        @media screen and ( max-width: 767px )
+            background: #fff
+            .header-content
+                .header-link-item
+                    color: #212529
+        .header-top
+            padding: 0 30px
+            height: 40px
+            background-color: #ecf8fd
+            align-items: center
+            justify-content: flex-end
+            @media screen and ( max-width: 767px )
+                display: none
+            &-a
+                text-decoration: none
+                margin-right: 30px
+                pointer-events: none
+        .header-content
+            padding: 0 30px
+            display: flex
+            height: 80px
+            justify-content: space-between
+            align-items: center
+            .scrolled
+                background-color: lightblue
+            .header-logo
+                width: 150px
+                background: 100%
+                cursor: pointer
+                height: 76px
+                margin-right: 10px
+            .header-link
+                flex: 1
+                justify-content: flex-start
+                align-items: center
+                @media screen and ( max-width: 767px )
+                    /*隱藏選單開始*/
+                    max-height: 0px
+                    overflow: hidden
+                    /*隱藏選單結束*/
+                    transition: max-height 1.5s
+                    margin-top: 1px
+                    padding-left: 0
+                    /*絕對定位疊在網頁上*/
+                    position: absolute
+                    z-index: 100
+                    /*header 80px+1px boder 線條*/
+                    top: 81px
+                    left: 0
+                    right: 0
+                    /*left跟right寫0，呈現滿版*/
+                    background: #0F222B
+                &-item
+                    list-style: none
+                    cursor: pointer
+                    font-size: 18px
+                    margin-left: 40px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    color: #FFF
+                    @media screen and ( max-width: 767px )
+                        float: none
+                        border-bottom: 1px dashed #212529
+                        margin-left: 0
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+                        @media screen and ( max-width: 767px )
+                            transition:  all .5s
+            .showmenu
+                display: none
+                @media screen and ( max-width: 767px )
+                    display: block
+                    float: right
+                    margin: 1em
+            .header-right
+                align-items: center
+                padding-left: 20px
+                @media screen and ( max-width: 767px )
+                    display: none
+                .header-link-item
+                    cursor: pointer
+                    font-size: 18px
+                    margin-right: 15px
+                    text-align: center
+                    position: relative
+                    font-weight: 500
+                    padding: 0 15px
+                    min-width: 89px
+                    a
+                        text-decoration: none
+                        color: inherit
+                        transition: all 1.5s ease
+                        &:hover
+                            color: #12aaeb
+            .menu-show
+                @media screen and ( max-width: 767px )
+                    max-height: 500px
+                    
+                    
+    .main-container
+        margin: 0px
+        padding: 0px
+        .landing_banner
+            position: relative
+            overflow: hidden
+            height: 852px
+            background: url(https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center
+            background-size: cover
+            background-color: rgba(0, 0, 0, .6)
+            background-blend-mode: multiply
+            .aos-animate
+                opacity: 1
+                transform: none
+                .banner_container
+                    position: absolute
+                    color: #fff
+                    top: 25%
+                    left: 50%
+                    transform: translateX(-50%)
+                    .banner_title
+                        margin-bottom: 20px
+                        font-size: 64px
+                        font-weight: 900
+                        line-height: 1.28
+                        letter-spacing: 1.28px
+                        @media screen and ( max-width: 767px )
+                            font-size: 50px
+                    .banner_text
+                        font-size: 24px
+                        max-width: 800px
+                        color: #FFF
+                    .banner_btn
+                        margin-top: 40px
+                        .btn-primary, .btn-outline-light
+                            height: 50px
+                            line-height: 36px
+                            font-size: 16px
+                            margin-right: 20px
+        .container-servicebox
+            margin-top: -80px
+            padding: 55px 60px 7px
+            border-radius: 4px
+            box-shadow: 0 10px 30px 0 rgba(18, 170, 235, .2)
+            background-color: #fff
+            position: relative
+            z-index: 10
+            margin-bottom: 130px
+            .text_center
+                text-align: center
+            .main_title
+                font-size: 40px
+                font-weight: bold
+                margin-bottom: 0px
+            .row
+                margin-top: 38px
+                display: flex
+                flex-wrap: wrap
+                margin-right: -15px
+                margin-left: -15px
+                .item
+                    .mode
+                        margin: 0 30px 53px
+                        display: flex
+                        justify-content: space-between
+                        // cursor: pointer
+                        @media screen and ( max-width: 767px )
+                            margin: 0
+                            display: block
+                            .far
+                                display: none
+                        a
+                            text-decoration: none
+                        img
+                            width: 60px
+                            margin-right: 12px
+                            vertical-align: middle
+                            border-style: none
+                            @media screen and ( max-width: 767px )
+                                width: 30px
+                        .mode_title
+                            font-size: 24px
+                            font-weight: bold
+                            margin: 7px 0 12px
+                            display: inlilne-block
+                            .icon-font
+                                font-size: 30px
+                                font-weight: normal
+                                vertical-align: -2px
+                                margin-left: 12px
+        .container-casesbox
+            .position-relative
+                .case-container
+                    margin: 0 80px 100px
+                    padding-bottom: 60px
+                    position: relative
+                    overflow: hidden
+                    list-style: none
+                    padding: 0
+                    z-index: 1
+                    .swiper-wrapper
+                        height: auto
+                        transform: translate3d(0px, 0px, 0px)
+                        display: flex
+                        .swiper-slide
+                            width: 293.333px
+                            margin-right: 50px
+                            height: auto
+                            box-sizing: border-box
+                            flex-shrink: 0
+                            position: relative
+                            transition-property: transform
+                            .cases_box
+                                height: 100%
+                                overflow: hidden
+                                .cases_img
+                                    width: 200px
+                                    height: 120px
+                                    position: relative
+                                    display: block
+                                    border-radius: 4px
+                                    overflow: hidden
+                                    color: linear-gradient(lightblue, purple)
+                                    img
+                                        width: 100%
+                                a
+                                    text-decoration: none
+                                .cases_label
+                                    display: inline-block
+                                    padding: 7px 19px
+                                    background: #ffd200
+                                    font-weight: bold
+                                    border-radius: 4px
+                                    margin-top: -17px
+                                    z-index: 100
+                                    position: relative
+                                    top: -9px
+                                    margin-bottom: -9px
+                                .cases_title
+                                    font-size: 22px
+                                    display: block
+                                    font-weight: 500
+                                    margin: 15px 0
+                                .cases_text
+                                    color: #666
+                                    margin-top: 14px
+        .chooseReason
+            position: relative
+            overflow: hidden
+            padding-top: 108px
+            &::before
+                content: ""
+                background: #f6fcfe
+                position: absolute
+                width: 250vw
+                height: 250vw
+                border-radius: 50%
+                z-index: -1
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+            .container-reasonbox
+                .text_center
+                    text-align: center
+                .main_title
+                    font-size: 40px
+                    font-weight: bold
+            .reasonbox1
+                padding: 90px 0
+                .container
+                    .row
+                        display: flex
+                        flex-wrap: wrap
+                        margin: 0 -15px
+                        // flex-direction: column
+                        // justify-content: center
+                        .reason_left-title
+                            .number_title
+                                line-height: normal
+                                font-family: Ubuntu
+                                font-size: 80px
+                                font-weight: bold
+                                color: #12aaeb
+                                font-style: italic
+                            .article_title
+                                font-size: 40px
+                                line-height: normal
+                                font-weight: bold
+                            .reason_text
+                                font-size: 18px
+                        .reason_right-img
+                            .reason_img
+                                width: 100%
+                                max-width: 540px
+            .reasonbox2
+                padding-top: 132px
+                padding-bottom: 144px
+                background: #FFF
+                .container
+                    .row
+                        display: flex
+                        flex-wrap: wrap
+                        margin: 0 -15px
+                        // flex-direction: column
+                        // justify-content: center
+                        @media screen and ( max-width: 767px )
+                            flex-direction: column-reverse
+                        .reason_left-img
+                            .reason_img
+                                width: 100%
+                                max-width: 540px
+                        .reason_right-title
+                            .number_title
+                                line-height: normal
+                                font-family: Ubuntu
+                                font-size: 80px
+                                font-weight: bold
+                                color: #12aaeb
+                                font-style: italic
+                            .article_title
+                                font-size: 40px
+                                line-height: normal
+                                font-weight: bold
+                            .reason_text
+                                font-size: 18px
+            .reasonbox3
+                padding: 144px 0
+                background: #f6fcfe
+                .container
+                    .row
+                        display: flex
+                        flex-wrap: wrap
+                        margin: 0 -15px
+                        // flex-direction: column
+                        // justify-content: center
+                        .reason_left-title
+                            .number_title
+                                line-height: normal
+                                font-family: Ubuntu
+                                font-size: 80px
+                                font-weight: bold
+                                color: #12aaeb
+                                font-style: italic
+                            .article_title
+                                font-size: 40px
+                                line-height: normal
+                                font-weight: bold
+                            .reason_text
+                                font-size: 18px
+                            .clientbox
+                                display: flex
+                                font-size: 14px
+                                margin-top: 30px
+                                flex-wrap: wrap
+                                .clientbox-box
+                                    margin-right: 30px
+                                    padding-right: 30px
+                                    max-width: 29%
+                                    position: relative
+                                    @media screen and ( max-width: 767px )
+                                        margin-right: 15px
+                                    p
+                                        font-family: Ubuntu
+                                        font-size: 48px
+                                        margin-bottom: 4px
+                                        font-weight: bold
+                                        color: #12aaeb
+                                        font-style: italic
+                                        @media screen and ( max-width: 767px )
+                                            font-size: 24px
+                        .reason_right-img
+                            .reason_img
+                                width: 100%
+                                max-width: 540px
+            .reasonbox4
+                padding-top: 59px
+                padding-bottom: 53px
+                background: #FFF
+                .container
+                    .row
+                        display: flex
+                        flex-wrap: wrap
+                        margin: 0 -15px
+                        // flex-direction: column
+                        // justify-content: center
+                        @media screen and ( max-width: 767px )
+                            flex-direction: column-reverse
+                        .reason_left-img
+                            .reason_img
+                                width: 100%
+                                max-width: 540px
+                        .reason_right-title
+                            .number_title
+                                line-height: normal
+                                font-family: Ubuntu
+                                font-size: 80px
+                                font-weight: bold
+                                color: #12aaeb
+                                font-style: italic
+                            .article_title
+                                font-size: 40px
+                                line-height: normal
+                                font-weight: bold
+                            .reason_text
+                                font-size: 18px
+            .reasonbox5
+                padding-top: 96px
+                background: #f6fcfe
+                .container
+                    .row
+                        display: flex
+                        flex-wrap: wrap
+                        margin: 0 -15px
+                        // flex-direction: column
+                        // justify-content: center
+                        .reason_center-title
+                            .number_title
+                                line-height: normal
+                                font-family: Ubuntu
+                                font-size: 80px
+                                font-weight: bold
+                                color: #12aaeb
+                                font-style: italic
+                            .article_title
+                                font-size: 40px
+                                line-height: normal
+                                font-weight: bold
+                            .reason_text
+                                font-size: 18px
+                                margin-bottom: 30px
+                            .casesView
+                                font-size: 20px
+                                font-weight: 500
+                                color: #12aaeb
+                                display: inline-block
+                                cursor: pointer
+                                text-decoration: none
+                                transition: all 0.5s ease
+                                .caseViewBtn
+                                    font-size: 30px
+                                    vertical-align: -3px
+                .moreApplication
+                    width: 1217.5px
+                    margin-left: 77.6px
+                    opacity: 1
+                    transform: none
+                    padding-bottom: 104px
+                    padding-top: 40px
+                    margin-top: 20px
+                    @media screen and ( max-width: 767px )
+                        margin-left: 0px
+                        width: 100%
+                        padding: 0 10px
+                    .moreApplication-box
+                        cursor: grab
+                        margin-left: auto
+                        margin-right: auto
+                        position: relative
+                        overflow: hidden
+                        list-style: none
+                        padding: 0
+                        z-index: 1
+                        .moreApplication-box-wrap
+                            transform: translate3d(0px, 0px, 0px)
+                            transition-duration: 0ms
+                            position: relative
+                            width: 100%
+                            height: 100%
+                            z-index: 1
+                            display: flex
+                            transition-property: transform
+                            box-sizing: content-box
+                            .moreApplication-box-choose
+                                border-radius: 4px
+                                position: relative
+                                flex-shrink: 0
+                                width: 270px
+                                height: 370px
+                                transition-property: transform
+                                margin-right: 10px
+                                display: block
+                                overflow: hidden
+                                .comment_img
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%, -50%)
+                                    height: 100%
+                                .comment_span
+                                    position: absolute
+                                    left: 50%
+                                    color: #fff
+                                    font-size: 28px
+                                    font-weight: bold
+                                    top: 50%
+                                    transform: translate(-50%, -50%)
+                        .swiper-pagination-bullets
+                            bottom: 10px
+                            left: 0
+                            width: 100%
+                        .swiper-pagination
+                            position: absolute
+                            text-align: center
+                            transition: .3s opacity
+                            transform: translate3d(0, 0, 0)
+                            z-index: 10
+                            .swiper-pagination-bullet
+                                margin: 0 4px
+                                border: 1px solid #212529
+                                opacity: 1
+                                width: 10px
+                                height: 10px
+                        .swiper-btn
+                            float: left
+                            margin: 20px 20px 0 0
+                            font-size: 37px
+                            color: #212529
+                            cursor: pointer
+        .resources
+            background: #f6fcfe
+            position: relative
+            overflow: hidden
+            &::before
+                content: ""
+                background: #FFF
+                position: absolute
+                width: 250vw
+                height: 250vw
+                border-radius: 50%
+                z-index: 0
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+            .container
+                padding-top: 130px
+                position: relative
+                margin-top: 60px
+                .main_title
+                    font-size: 40px
+                    font-weight: bold
+                    margin-bottom: 0px
+                .row
+                    margin: 30px -15px
+                    justify-content: center
+                    display: flex
+                    flex-wrap: wrap
+                    .item
+                        flex: 0 0 50%
+                        max-width: 50%
+                        .marketing_box
+                            border-radius: 4px
+                            box-shadow: 0 10px 30px 0 rgba(18, 170, 235, .2)
+                            background-color: #fff
+                            padding: 43px
+                            height: 100%
+                            display: flex
+                            @media screen and ( max-width: 767px )
+                                display: block
+                                padding: 16px
+                            .box-icon
+                                img
+                                    width: 50px
+                                    height: 50px
+                                    margin-right: 20px
+                                    vertical-align: middle
+                                    border-style: none
+                                    @media screen and ( max-width: 767px )
+                                        width: 25px
+                                        height: 25px
+                                        margin-bottom: 20px
+                            .flex-1
+                                .resources_title
+                                    font-size: 28px
+                                    margin-bottom: 8px
+                                    font-weight: 500
+                                    display: block
+                                    @media screen and ( max-width: 767px )
+                                        font-size: 20px
+                                .btn-arrow-circle
+                                    margin-top: 15px
+                                    text-decoration: none
+                                    outline: none
+                                    font-size: 20px
+                                    font-weight: 500
+                                    color: #12aaeb
+                                    display: inline-block
+                                    cursor: pointer
+                                    transition: all 0.5s ease
+                                    span
+                                        margin-right: 12px
+                                    far
+                                        font-size: 30px
+                                        vertical-align: -3px
+        .period
+            margin: 150px auto 180px
+            .row
+                display: flex
+                flex-wrap: wrap
+                margin-right: -15px
+                margin-left: -15px
+                .period-left
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    .main_title
+                        font-size: 40px
+                        font-weight: bold
+                        margin-bottom: 0
+                    .period-list
+                        margin: 35px 0
+                        .period-list-item
+                            font-size: 18px
+                            .period-list-num
+                                font-family: Ubuntu
+                                font-size: 24px
+                                font-weight: bold
+                                margin-right: 8px
+                                font-style: italic
+                .period-right
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    .period-img
+                        width: 100%
+                        max-width: 540px
+                        margin-left: 20px
+        .cooperation
+            margin-bottom: 185px
+            @media screen and ( max-width: 767px )
+                display: none
+            .enterprise
+                .text_center
+                    text-align: center
+                .main_title
+                    font-size: 40px
+                    font-weight: bold
+                .enterprise_box
+                    .enterprise_list
+                        text-align: center
+                        img
+                            width: calc( 100% - 5 )
+                            margin-top: 14px
+                            vertical-align: middle
+                            border-style: none
+                .swiper-container
+                    cursor: grab
+                    .swiper-wrapper
+                        transition-duration: 0ms
+                        transform: translate3d(0px, 0, 0)
+                        position: relative
+                        width: 100%
+                        height: 100%
+                        z-index: 1
+                        display: flex
+                        transition-property: transform
+                        box-sizing: content-box
+                        .swiper-slide
+                            flex-shrink: 0
+                            width: 100%
+                            height: 100%
+                            position: relative
+                            transition-property: transform
+                            .enterprise_list
+                                text-align: center
+                                img
+                                    width: calc( 100% - 5 )
+                                    margin-top: 14px
+                                    vertical-align: middle
+                                    border-style: none
+        .readyPlan
+            background: #12aaeb
+            padding: 60px 10px
+            display: flex
+            color: #fff
+            justify-content: center
+            @media screen and ( max-width: 767px )
+                display: block
+            .plan_title
+                color: #fff
+                font-size: 28px
+                font-weight: 500
+                line-height: normal
+                margin-right: 30px
+            .d-flex
+                .contact-btn
+                    color: #12aaeb
+                    margin: 4px 6px
+                .program-btn
+                    margin: 4px 6px
+        .footer_full
+            border-top: solid 1px #dddddd
+            background-color: #fff
+            padding-left: 20px
+            padding-right: 20px
+            .footer_box
+                max-width: 1110px
+                margin: 0 auto
+                padding: 40px 0 48px
+                .itembox
+                    width: 100%
+                    display: flex
+                    .footer_link-left
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                    .footer_link-center
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                        .d-flex
+                            .footer_link-center-icon
+                                margin-right: 20px
+                                color: #12aaeb
+                    .footer_link-right
+                        width: 30%
+                        box-sizing: border-box
+                        margin-right: 30px
+                        @media screen and ( max-width: 767px )
+                            display: none
+                            width: 100%
+                        p, ul, li, ol, a
+                            margin: 0
+                            padding: 0
+                            list-style: none
+                            text-decoration: none
+                            color: #333333
+                        .title
+                            font-size: 20px
+                            font-weight: bold
+                            margin-bottom: 14px
+                .Copyright
+                    padding-top: 55px
+                    width: 100%
+                    justify-content: center
+                    display: flex
+                    @media screen and ( max-width: 767px )
+                        display: block
+                    p, ul, li, ol, a
+                        list-style: none
+                        text-decoration: none
+                    &-right, &-center, &-left
+                        margin-right: 20px
+                        margin-bottom: 0px
+                        padding-bottom: 0px
+                        color: #333333
+                        @media screen and ( max-width: 767px )
+                            font-size: 12px
+                            margin: 0 auto
+body
+    .header
+        .header-content
+            .menu-show
+                .header-link
+                    max-height: 1000px

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="網路行銷公司 - 歐鎷資訊提供網站設計及架設、企業B2B整合行銷、程式設計、SEO搜尋引擎行銷、SEM網路整合行銷..等服務，為您的網站增進流量，快速磋合買賣效益。">
+    <title>奧瑪整合行銷 | 網路行銷、網站設計、B2B行銷 | SEM搜尋引擎整合行銷</title>
+    <link rel="stylesheet" href="./sass/services.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/66ca577ef5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/swiper-bundle.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/services.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <div class="header transparent">
+        <div class="header-top d-md-flex">
+            <a href="#" class="header-top-a"><span data-lang="about_01">關於我們</span></a>
+            <a href="#" target="_blank" class="header-top-a"><span data-lang="facebook"><i class="fab fa-facebook-square"></i></span></a>
+        </div>
+        <div class="header-content">
+            <div class="header-logo forIndex-2">
+                <a href="./index.html"><img src="./img/logo-digital-marketing-institute.svg" alt=""></a>
+            </div>
+            <ul class="header-link d-md-flex flex-1">
+                <li class="header-link-item header-link-item-1">
+                    <a href="./marketing.html"><span data-lang="webmarketing_01">網路行銷</span></a>
+                </li>
+                <li class="header-link-item header-link-item-2">
+                    <a href="#" class="header-collapsed header-pricing">
+                        <a href="./services.html"><span data-lang="index_item_002">服務項目</span></a>
+                    </a>
+                </li>
+                <li class="header-link-item header-link-item-3">
+                    <a href="./cases.html"><span data-lang="cases_01">成果案例</span></a>
+                </li>
+            </ul>
+            <!-- 漢堡選單 -->
+            <a href="#" class="showmenu">
+                <i class="fas fa-bars"></i>
+            </a>
+            <div class="header-right d-md-flex">
+                <div class="header-link-item">
+                    <a href="./contact.html"><span data-lang="contact_01">洽詢</span></a>
+                </div>
+                <div class="header-lang">
+                    <i class="fas fa-globe" style="color: #FFF"></i>
+                    <select name tabindex="-98" id="languageType" class="selectpicker">
+                        <option value="" lang="en">English</option>
+                        <option value="" lang="cn">Japanese</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="fixedContainer" id="services">
+        <!-- 優惠消息 -->
+        <div class="discount-inner">
+            <div class="discount-inner-content">
+                <div class="discount-inner-content-left" data-aos="fade-left">
+                    <div class="vip-swiper-icon">
+                        <img src="./img/index_03-vip-pass.svg" alt="" class="vip-swiper-img">
+                    </div>
+                    <div class="discount-inner-content-center">
+                        <div class="vip-swiper-text">
+                            <span style="color: #ffda2d;">✦合作夥伴專屬獨享✦</span>
+                            <span style="color: #FFF;">【75折優惠】延長至2021年9月30日。</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-light vip-btn" role="button">閱讀更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 購買方案 頁面切換區塊 -->
+        <div class="plan-switcher">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">超值創業</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">熱銷企業</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">精選豪華</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- TOP BANNER -->
+        <div class="page-banner">
+            <picture><img src="./img/index_03-pageBanner.jpeg" alt="" class="page-banner-img"></picture>
+            <div class="container page-banner-content" >
+                <p class="page-banner-title" data-aos="fade-right">不同服務需求，我們都能滿足</p>
+            </div>
+        </div>
+        <!-- tab優勢 -->
+        <div class="advantage-tab">
+            <div class="advantage-tab-content">
+                <div class="advantage-tab-item" href="#">行銷優勢</div>
+                <div class="advantage-tab-item" href="#">特惠專案</div>
+            </div>
+        </div>
+        <!-- 服務範圍 -->
+        <div class="services-range">
+            <div class="container services-intro">
+                <div class="d-flex justify-content-between">
+                    <div class="services-intro-text" data-aos="fade-up">
+                        <div class="text-subtitle">服務範圍</div>
+                        <div class="text-subhead mb-1 mb-md-0 d-inline d-md-block">我們擁有超過千件、來自各行各業，網路行銷、網站架設、網頁設計、全網站內容優化的行銷經驗</div>
+                        <div class="text-p">我們期望成為最專業的資訊部門、行銷顧問，用心做好客戶交付的每一個案件，永續為客戶帶來品牌價值。</div>
+                    </div>
+                    <div class="services-intro-img d-none d-md-block">
+                        <img src="./img/index_03-servicesrange.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-50"></div>
+                <div class="btn-arrow-circle d-inline-block" data-toggle="modal"></div>
+            </div>
+        </div>
+        <!-- 服務項目 -->
+        <div class="services-items">
+            <div class="container services-container">
+                <div class="services-list">
+                    <div class="services-subtitle">你所需要的服務項目</div>
+                    <div class="services-wrap position-relative">
+                        <div class="swiper-container services-swiper swiper-container-initialized swiper-container-horizontal">
+                            <div class="row swiper-wrap">
+                                <div class="col-lg-3 col-mg-6 col-12 swiper-slide swiper-slide-active" data-aos="fade-up">
+                                    <div class="services-box d-flex flex-column justify-content-between">
+                                        <img src="./img/index_03-browser.svg" alt="" class="services-box-img">
+                                        <p class="services-box-subtitle">品牌服務</p>
+                                        <p class="services-box-p">想要打造屬於自己的品牌卻又怕無法完整傳達？奧瑪透過一連串的表格及引導，讓你的理念與客戶無縫接軌。</p>
+                                        <button class="btn btn-outline-info services-box-btn">查看案例</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-mg-6 col-12 swiper-slide swiper-slide-active" data-aos="fade-up">
+                                    <div class="services-box d-flex flex-column justify-content-between">
+                                        <img src="./img/index_03-rgb.svg" alt="" class="services-box-img">
+                                        <p class="services-box-subtitle">網站製作</p>
+                                        <p class="services-box-p">企業形象、電商購物等網站，RWD響應式一應概括，多項裝置都能輕鬆瀏覽，打動人心到完成轉換。</p>
+                                        <button class="btn btn-outline-info services-box-btn">查看案例</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-mg-6 col-12 swiper-slide swiper-slide-active" data-aos="fade-up">
+                                    <div class="services-box d-flex flex-column justify-content-between">
+                                        <img src="./img/index_03-compass.svg" alt="" class="services-box-img">
+                                        <p class="services-box-subtitle">內容行銷</p>
+                                        <p class="services-box-p">商品賣得好，內容很重要，社群經營、廣告文案到影片腳本，從核心概念抓住消費者，打到痛點才是留住訂單的關鍵。</p>
+                                        <button class="btn btn-outline-info services-box-btn">查看案例</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-mg-6 col-12 swiper-slide swiper-slide-active" data-aos="fade-up">
+                                    <div class="services-box d-flex flex-column justify-content-between">
+                                        <img src="./img/index_03-resize.svg" alt="" class="services-box-img">
+                                        <p class="services-box-subtitle">廣告投放</p>
+                                        <p class="services-box-p">十年以上關鍵字廣告代操經驗，定期提供數據報表與市場分析，炒熱商品網路聲量，有效讓品牌與產品達到最大流量與曝光。</p>
+                                        <button class="btn btn-outline-info services-box-btn">查看案例</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"></div>
+        </div>
+        <!-- 服務期間 -->
+        <div class="services-example">
+           <div class="services-during aos-init aos-animate" aos="fade-up" aos-duration="1000" >
+               <p class="during-subtitle">案件執行期間，奧瑪將提供<span style="color: #12aaeb;">全方位的服務</span></p>
+               <p class="during-p">好的網站設計能有效與使用者對話，企業形象隨著使用者指尖盡情展現。奧瑪團隊以無障礙的響應式網頁設計為標準，為您量身訂作符合企業形象、產品資訊呈現重點導向的有效網站。</p>
+           </div>
+           <div class="services-example-area">
+                <div class="example-wrap">
+                    <div data-aos="fade-right" aos-duration="1000" class="aos-init aos-animate wrap-left">
+                        <h3 class="example-subtitle">品牌服務</h3>
+                        <p class="example-p">品牌能為企業塑造深刻的形象價值，需要深入瞭解每個企業獨特的理念與精神，專注消費者接觸細節，針對關鍵核心需求找出最適合的設計方案。</p>
+                        <a href="#" class="btn btn-primary example-btn">相關方案<i class="far fa-arrow-alt-circle-right" style="margin-left: 10px"></i></a>
+                    </div>
+                    <div data-aos="fade-left" aos-delay="200" aos-duration="1000" class="aos-init aos-animate wrap-right">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-01.jpeg" alt="">
+                                </div>
+                                <p class="example-p">翔陽工業</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-02.jpeg" alt="">
+                                </div>
+                                <p class="example-p">米諾坊</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-03.jpeg" alt="">
+                                </div>
+                                <p class="example-p">歐緹肌研</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-wrap">
+                    <div data-aos="fade-right" aos-duration="1000" class="aos-init aos-animate wrap-left">
+                        <h3 class="example-subtitle">網站製作</h3>
+                        <p class="example-p">一個好的網站，第一眼映入眼簾的就是視覺設計，真正好的網頁設計，不是單單只把網站架設完成，而是要利用網站的視覺效果及提供的資訊，吸引消費者停留及重複造訪。</p>
+                        <a href="#" class="btn btn-primary example-btn">相關方案<i class="far fa-arrow-alt-circle-right" style="margin-left: 10px"></i></a>
+                    </div>
+                    <div data-aos="fade-left" aos-delay="200" aos-duration="1000" class="aos-init aos-animate wrap-right">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-04.jpeg" alt="">
+                                </div>
+                                <p class="example-p">日聖眼科診所</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-05.jpeg" alt="">
+                                </div>
+                                <p class="example-p">貝比嘟豆嬰幼玩具</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-06.jpeg" alt="">
+                                </div>
+                                <p class="example-p">未來產房工作空間</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-wrap">
+                    <div data-aos="fade-right" aos-duration="1000" class="aos-init aos-animate wrap-left">
+                        <h3 class="example-subtitle">內容行銷</h3>
+                        <p class="example-p">內容行銷的撰寫與編輯，需要一個完整的專業團隊來編輯．並非500字的作文草稿就可以完成的．我們經已成長駭客的思考模式來做切入點。</p>
+                        <a href="#" class="btn btn-primary example-btn">相關方案<i class="far fa-arrow-alt-circle-right" style="margin-left: 10px"></i></a>
+                    </div>
+                    <div data-aos="fade-left" aos-delay="200" aos-duration="1000" class="aos-init aos-animate wrap-right">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-07.jpeg" alt="">
+                                </div>
+                                <p class="example-p">綿綿冰心圓</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-08.jpeg" alt="">
+                                </div>
+                                <p class="example-p">亞典升學畫室</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-09.jpeg" alt="">
+                                </div>
+                                <p class="example-p">吃味碳烤</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-wrap">
+                    <div data-aos="fade-right" aos-duration="1000" class="aos-init aos-animate wrap-left">
+                        <h3 class="example-subtitle">廣告投放</h3>
+                        <p class="example-p">每一個搜尋背後都是需求。關鍵字廣告精準鎖定已有需求的顧客，吸引TA第一時間點擊前往，迅速增加官網流量、提高詢問量，大幅提高品牌能見度！</p>
+                        <a href="#" class="btn btn-primary example-btn">相關方案<i class="far fa-arrow-alt-circle-right" style="margin-left: 10px"></i></a>
+                    </div>
+                    <div data-aos="fade-left" aos-delay="200" aos-duration="1000" class="aos-init aos-animate wrap-right">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-10.jpeg" alt="">
+                                </div>
+                                <p class="example-p">寰宇科技</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-11.jpeg" alt="">
+                                </div>
+                                <p class="example-p">昇陽光學儀器</p>
+                            </a>
+                            <a href="#" class="owl-stage-outer">
+                                <div class="example-img">
+                                    <img src="./img/index_03-example-12.jpeg" alt="">
+                                </div>
+                                <p class="example-p">走光影像</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <!-- 價格方案 -->
+        <div class="pricing-product position-relative mb-50">
+           <div class="swiper-container pricing-stored-swiper swiper-container-initialized swiper-container-horizontal">
+                <div class="pricing-solution">
+                    <p class="solution-subtitle">解決方案</p>
+                    <p class="solution-p">更符合產業策略的網站佈局<br>
+                    預算花在重點上，輕鬆擁有高CP值的行銷服務<br>
+                    <i class="fas fa-sort-down"></i></p>
+                </div>
+                <div class="swiper-wrapper pricing-stored-container">
+                    <div class="swiper-slide pricing-stored-item swiper-slide-active">
+                        <div class="pricing-product-box" data-aos="fade-up">
+                            <img src="./img/index_03-creative.svg" alt="" class="pricing-product-img mb-20">
+                            <div class="pricing-product-name">超值創業方案</div>
+                            <div class="pricing-list">
+                                <p class="name-subtitle">品牌服務</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>市場資訊蒐集
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>目標客群分析
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>品牌定位地圖
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">社群行銷</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>廣告文案
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>素材製作
+                                    </li>
+                                </ul>
+                                <p class="list-bonus"><span style="color: #12aaeb;">✦BONUS✦</span><br>顧問線上諮詢</p>
+                                <button class="btn btn-outline-info pricing-box-btn">立即洽詢</button>
+                            </div>
+                        </div>
+                        <div class="pricing-product-box" data-aos="fade-up">
+                            <img src="./img/index_03-paint-roller.svg" alt="" class="pricing-product-img mb-20">
+                            <div class="pricing-product-name">熱銷企業方案</div>
+                            <div class="pricing-list">
+                                <p class="name-subtitle">品牌服務</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>市場資訊蒐集
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>目標客群分析
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>品牌定位地圖
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">社群行銷</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>廣告文案
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>素材製作
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">產品企劃</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>產品市調分析
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>產品規劃建議
+                                    </li>
+                                </ul>
+                                <p class="list-bonus"><span style="color: #12aaeb;">✦BONUS✦</span><br>顧問線上諮詢</p>
+                                <button class="btn btn-outline-info pricing-box-btn">立即洽詢</button>
+                            </div>
+                        </div>
+                        <div class="pricing-product-box" data-aos="fade-up">
+                            <img src="./img/index_03-font.svg" alt="" class="pricing-product-img mb-20">
+                            <div class="pricing-product-name">精選豪華方案</div>
+                            <div class="pricing-list">
+                                <p class="name-subtitle">品牌服務</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>市場資訊蒐集
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>目標客群分析
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>品牌定位地圖
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">社群行銷</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>廣告文案
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>素材製作
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>異業合作推廣
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">產品企劃</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>產品市調分析
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>產品規劃建議
+                                    </li>
+                                </ul>
+                                <p class="name-subtitle">專案顧問</p>
+                                <ul class="list-brand">
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>數據分析整理
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="far fa-check-circle"></i>品牌導向定位
+                                    </li>
+                                </ul>
+                                <p class="list-bonus"><span style="color: #12aaeb;">✦BONUS✦</span><br>顧問線上諮詢</p>
+                                <button class="btn btn-outline-info pricing-box-btn">立即洽詢</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-product-box-bottom" data-aos="fade-up">
+                    <img src="./img/index_03-creativity.svg" alt="" class="pricing-product-img mb-20">
+                    <div class="pricing-product-name">頂級客製方案</div>
+                    <p class="pricing-bottom-p">由團隊中專業的網站行銷經理與累積多年經驗的合作團隊親自挑選適合您的行銷服務項目，協助您了解各式經營心法，並提供針對品牌的商業行銷規劃書</p>
+                    <p class="list-bonus">✦BONUS✦ 顧問線上諮詢建議書 + 完整保固售後</p>
+                    <button class="btn btn-outline-info pricing-box-btn"><i class="far fa-hand-point-right"></i>一鍵申請專屬行銷團隊</button>
+                </div>
+           </div>
+        </div>
+        <!-- 專人洽詢 -->
+        <div class="readyPlan" data-aos="fade-up">
+        <div class="plan_title">準備開始你的行銷計畫嗎？Let's Do It!</div>
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <a href="#" class="btn btn-light contact-btn">立即洽詢</a>
+            <a href="#" class="btn btn-outline-light program-btn"><span style="color: #FFF">推薦服務</span></a>
+        </div>
+        </div>
+        <!-- footer -->
+        <div class="footer_full footer-flex">
+            <div class="footer_box">
+                <div class="flex-wrap itembox">
+                    <ul class="footer_link-left">
+                        <li class="title">奧瑪數位行銷</li>
+                        <li><a href="#" target="_blank">行銷人</a></li>
+                        <li><a href="#" target="_blank">行銷看板</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                    <ul class="footer_link-center">
+                        <li class="title">CONTACT聯絡我們</li>
+                        <div class="d-flex">
+                            <li class="footer_link-center-icon">
+                                <span><i class="fas fa-envelope"></i></span><br>
+                                <span><i class="fas fa-phone"></i></span><br>
+                                <span><i class="fas fa-fax"></i></span><br>
+                                <span><i class="fas fa-map-marked-alt"></i></span><br>
+                            </li>
+                            <li class="footer_link-center-contact">
+                                <a href="#" target="_blank">service@OMAfirst.com.tw</a><br>
+                                <a href="#" target="_blank">02-2243-9960</a><br>
+                                <a href="#" target="_blank">02-2243-5922</a><br>
+                                <a href="#" target="_blank">802 高雄市 苓雅區 中正一路306號6F-3</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="footer_link-right">
+                        <li class="title">HELP幫助</li>
+                        <li><a href="#">企業協作方案</a></li>
+                        <li><a href="#">異業合作洽談</a></li>
+                        <li><a href="#">線上行銷平台</a></li>
+                    </ul>
+                </div>
+                <div class="Copyright">
+                    <p class="Copyright-right">Copyright©2021 奧鎷數位科技股份有限公司. All Rights Reserved.</p>
+                    <a href="#" target="_blank" class="Copyright-center">使用條款</a>
+                    <a href="#" target="_blank" class="Copyright-left">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal popup-image-gallery" id="popup-image-gallery" role="dialog" tabindex="-1"></div>
+        <div class="modal bs4_modal mobile_notice fade" id="mobile_notice" role="dialog" tabindex="-1"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/services.js"></script>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <!-- <script>
+        AOS.init();
+    </script> -->
+
+
+</body>
+</html>

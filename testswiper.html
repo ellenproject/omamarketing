@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <style>
+        .swiper-container {
+            /* 設定幻燈片寬度跟高度 */
+            width: 320px;
+            height: 200px;
+        }
+    </style>
+    
+    <!-- 幻燈片內容 -->
+    <div class="swiper-container">
+        <!-- 外層(必要) -->
+        <div class="swiper-wrapper">
+            <!-- 幻燈片內容 -->
+            <div class="swiper-slide"><img src="https://unsplash.it/640/400/?random"></div>
+            <div class="swiper-slide"><img src="https://unsplash.it/640/400/?random"></div>
+            <div class="swiper-slide"><img src="https://unsplash.it/640/400/?random"></div>
+            <div class="swiper-slide"><img src="https://unsplash.it/640/400/?random"></div>
+            <div class="swiper-slide"><img src="https://unsplash.it/640/400/?random"></div>
+        </div>
+        <!-- 分頁(非必要) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 上/下一頁按鈕(非必要) -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 捲軸(非必要) -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/testswiper.js"></script>
+</body>
+
+</html>
